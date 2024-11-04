@@ -11,6 +11,7 @@
 		FF7BAECB2CD69C4E002B592C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BAECA2CD69C4E002B592C /* ContentView.swift */; };
 		FF7BAECD2CD69C5E002B592C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7BAECC2CD69C5E002B592C /* Assets.xcassets */; };
 		FF7BAED02CD69C5E002B592C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7BAECF2CD69C5E002B592C /* Preview Assets.xcassets */; };
+		FF7BAEDB2CD92AE1002B592C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BAEDA2CD92AE1002B592C /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FF7BAECA2CD69C4E002B592C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF7BAECC2CD69C5E002B592C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7BAECF2CD69C5E002B592C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF7BAEDA2CD92AE1002B592C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,8 @@
 		FF7BAEC72CD69C4E002B592C /* SplitTrip */ = {
 			isa = PBXGroup;
 			children = (
+				FF7BAED62CD6A21F002B592C /* Home */,
 				FF7BAEC82CD69C4E002B592C /* SplitTripApp.swift */,
-				FF7BAECA2CD69C4E002B592C /* ContentView.swift */,
 				FF7BAECC2CD69C5E002B592C /* Assets.xcassets */,
 				FF7BAECE2CD69C5E002B592C /* Preview Content */,
 			);
@@ -65,6 +67,39 @@
 				FF7BAECF2CD69C5E002B592C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF7BAED62CD6A21F002B592C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BAED72CD6A225002B592C /* Model */,
+				FF7BAED92CD6A237002B592C /* View */,
+				FF7BAED82CD6A22E002B592C /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF7BAED72CD6A225002B592C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF7BAED82CD6A22E002B592C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF7BAED92CD6A237002B592C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BAECA2CD69C4E002B592C /* ContentView.swift */,
+				FF7BAEDA2CD92AE1002B592C /* SwiftUIView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				FF7BAECB2CD69C4E002B592C /* ContentView.swift in Sources */,
 				FF7BAEC92CD69C4E002B592C /* SplitTripApp.swift in Sources */,
+				FF7BAEDB2CD92AE1002B592C /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
