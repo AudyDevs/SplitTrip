@@ -12,6 +12,7 @@
 - Arquitectura MVVM (Model-View-ViewModel)
 - ViewModel: Nos permite almacenar el estado y realizar cambios de forma reactiva en la interfaz de usuario.
 - [FireBase](https://github.com/firebase/firebase-android-sdk): Suite de muchas herramientas tales como, notificaciones push, base de datos cloud, informe de errores, analíticas y controles de login.
+- UserDefault: Base de datos local para permitirnos un acceso fluido y eficiente a datos poco sensibles, como preferencias o usuarios por defecto.
 - Testing
 - Código con Clean Code y Clean Architecture
 
