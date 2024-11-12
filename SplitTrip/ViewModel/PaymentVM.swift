@@ -26,15 +26,17 @@ final class PaymentVM {
     func getPayments(idGroup: String, searchedPayment: String) {
         self.isLoading = true
         self.collaborators.removeAll()
+        self.balances.removeAll()
         StorePayment(idGroup: idGroup).getPayments(searchedPayments: searchedPayment) { payments in
             self.payments = payments
             self.groupPayments(payments: payments)
             
             for payment in payments {
+                let totalAmount = Double(payment.amount) ?? 0
                 StoreCollaborator(idGroup: idGroup, idPayment: payment.id).getCollaborators { collaborators in
                     for collaborator in collaborators {
                         let balance = if payment.payFor == collaborator.name {
-                            collaborator.active ? collaborator.amount : 0
+                            collaborator.active ? totalAmount - collaborator.amount : totalAmount
                         } else {
                             collaborator.active ? -collaborator.amount : 0
                         }

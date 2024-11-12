@@ -12,7 +12,7 @@ final class HomeVM {
     var user: User?
     var isLoading: Bool = true
     var groups: [Group] = []
-    let emailUserDefault: String = UserDefaults.standard.string(forKey: "emailUser") ?? "albert@gmail.com"
+    let emailUserDefault: String = UserDefaults.standard.string(forKey: "emailUser") ?? ""
     
     init() {
         getUser()

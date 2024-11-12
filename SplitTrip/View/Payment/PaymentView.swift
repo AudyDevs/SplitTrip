@@ -146,5 +146,5 @@ struct PaymentView: View {
 }
 
 #Preview {
-    PaymentView(idGroup: "8724664D-E2D3-4C23-BED2-E22ADC8B8263")
+    PaymentView(idGroup: "8215D7D5-5BB9-4E56-9F5F-779D362285F3")
 }
